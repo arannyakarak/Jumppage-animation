@@ -51,7 +51,6 @@ h3 {
 
 p {
   margin: 10px 0;
-  /* font-size: 1rem; */
   line-height: 1.6rem;
 	font-weight: 300;
 	letter-spacing: 0.05rem;
@@ -215,20 +214,7 @@ a.before:hover:before,a.after:hover:after{
   animation-direction: normal;
   animation-fill-mode: forwards;
 }
-@keyframes springy-text {
-  0%   {
-    letter-spacing: 1.2em;
-    color: white;
-    opacity: .7;
-    
-    }
-  100%   {
-    letter-spacing: 0.1em;
-    color: white;
-    opacity: 1;
-    
-    }
-  }
+
 
 .showcase h1 {
   font-size: 40px;
@@ -356,7 +342,6 @@ a.before:hover:before,a.after:hover:after{
   left: 20px;
   right: 20px;
   bottom: 20px;
-  /* background: #404144;*/
    background: #5a2c2c; 
   border-radius: 15px;
   display: flex;
@@ -405,7 +390,6 @@ a.before:hover:before,a.after:hover:after{
    background: #fff;
   box-shadow: 0px 1px 7px 3px #fc8c70;
   color: var(--primary-color);
-  /* font-size: 1.3rem; */
 }
 .content h3{
   text-shadow: 2px 2px 6px #070000;
@@ -469,8 +453,6 @@ a.before:hover:before,a.after:hover:after{
 
 }
 
-/* swing */
-
 
 /* footer */
 
@@ -525,7 +507,20 @@ a.before:hover:before,a.after:hover:after{
   }
 }
 
-
+@keyframes springy-text {
+  0%   {
+    letter-spacing: 1.2em;
+    color: white;
+    opacity: .7;
+    
+    }
+  100%   {
+    letter-spacing: 0.1em;
+    color: white;
+    opacity: 1;
+    
+    }
+  }
 
 /* Tablets and under */
 @media (max-width: 768px) {
@@ -567,7 +562,7 @@ a.before:hover:before,a.after:hover:after{
 
   .navbar {
     background-position: center;
-    padding-bottom: -2.5rem;;
+  
   }
 
   .card .box .content h2{
@@ -613,8 +608,7 @@ margin-bottom: 10px;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.2);
     text-align: center;
-    /* padding-bottom: 10px; */
-    /* margin-bottom: 25px; */
+    
   }
 
   .showcase-intro {
