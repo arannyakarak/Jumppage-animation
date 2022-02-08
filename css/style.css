@@ -201,8 +201,10 @@ a.before:hover:before,a.after:hover:after{
   position: relative;
 }
 .showcase-text .one {
-  animation: slideInFromLeft 1s ease-in;
+  animation: 2s anim-lineUp ease-out ;
+ 
 }
+
 .showcase-text .two{
   color: white;
   opacity: 0;
@@ -482,15 +484,24 @@ a.before:hover:before,a.after:hover:after{
 	filter: grayscale(0);
 }
 /* Animations */
-@keyframes slideInFromLeft {
+@keyframes anim-lineUp {
   0% {
-    transform: translateX(-100%);
+    opacity: 0;
+    transform: translateY(80%);
   }
-
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
   100% {
-    transform: translateX(0);
+    opacity: 1;
+    transform: translateY(0%);
   }
 }
+
 @keyframes slideInFromRight {
   0% {
     transform: translateX(100%);
